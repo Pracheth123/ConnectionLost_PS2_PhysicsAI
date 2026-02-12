@@ -1,0 +1,42 @@
+/* App.css - Global Styles & Polish */
+
+/* 1. Make the whole app take up the full screen */
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevents double scrollbars */
+}
+
+/* 2. Custom "Lab" Scrollbar for the Left Panel */
+/* Works on Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111827; /* Dark Gray Background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #374151; /* Lighter Gray Handle */
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4b5563; /* Hover Color */
+}
+
+/* 3. Text Selection Color (Sci-Fi Blue) */
+::selection {
+  background: #3b82f6; /* Blue-500 */
+  color: white;
+}
+
+/* 4. Canvas Container */
+canvas {
+  display: block; /* Removes tiny white space at bottom */
+  outline: none;
+}
